@@ -32,18 +32,24 @@ body {
 
 button {
     border: none;
-    font-size: 16px;
-    padding: 15px 10px;
+    font-size: 12px;
+    padding: 10px 5px;
     cursor: pointer;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
 }
 
 .number {
     background-color: #333;
+    font-size: 16px;
 }
 
 .operator {
     background-color: #f1a33c;
+    font-size: 16px;
 }
 
 .func {
@@ -57,4 +63,21 @@ button {
 
 button:active {
     opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .calculator {
+        max-width: 100%;
+    }
+    
+    button {
+        font-size: 10px;
+        padding: 5px 2px;
+        height: 35px;
+    }
+    
+    .number, .operator {
+        font-size: 14px;
+    }
 }
